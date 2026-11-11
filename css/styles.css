@@ -1,0 +1,36 @@
+
+/* 1. Mehrfachselektor: Überschriften */
+main h1, main h2, main h3 {
+    color: #245c73;
+}
+
+/* 2. Kombinator: Links in der Navigation */
+nav > ul > li > a {
+    color: #245c73;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 3. Pseudoklasse: Navigation beim Darüberfahren */
+nav a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+/* 4. Pseudoklasse: Abwechselnde Tabellenzeilen */
+#produkte tbody tr:nth-child(odd) {
+    background-color: #e5f2f5;
+}
+
+/* 5. Attributselektor: Pflichtfelder im Formular */
+#kontakt form input[required],
+#kontakt form textarea[required] {
+    border: 2px solid #e67e22;
+}
+
+/* 6. Kombinator: Mitarbeiterkarten */
+#angestellte > div {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin: 10px;
+}
